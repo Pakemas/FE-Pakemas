@@ -4,19 +4,18 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'popupektp_model.dart';
+export 'popupektp_model.dart';
 
-import 'popupe_k_t_p_model.dart';
-export 'popupe_k_t_p_model.dart';
-
-class PopupeKTPWidget extends StatefulWidget {
-  const PopupeKTPWidget({super.key});
+class PopupektpWidget extends StatefulWidget {
+  const PopupektpWidget({super.key});
 
   @override
-  State<PopupeKTPWidget> createState() => _PopupeKTPWidgetState();
+  State<PopupektpWidget> createState() => _PopupektpWidgetState();
 }
 
-class _PopupeKTPWidgetState extends State<PopupeKTPWidget> {
-  late PopupeKTPModel _model;
+class _PopupektpWidgetState extends State<PopupektpWidget> {
+  late PopupektpModel _model;
 
   @override
   void setState(VoidCallback callback) {
@@ -27,9 +26,7 @@ class _PopupeKTPWidgetState extends State<PopupeKTPWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => PopupeKTPModel());
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+    _model = createModel(context, () => PopupektpModel());
   }
 
   @override
@@ -49,7 +46,7 @@ class _PopupeKTPWidgetState extends State<PopupeKTPWidget> {
         mainAxisSize: MainAxisSize.max,
         children: [
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(21, 17, 21, 0),
+            padding: EdgeInsetsDirectional.fromSTEB(21.0, 17.0, 21.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -70,35 +67,37 @@ class _PopupeKTPWidgetState extends State<PopupeKTPWidget> {
                   icon: Icon(
                     Icons.close,
                     color: Colors.black,
-                    size: 28,
+                    size: 28.0,
                   ),
                   options: FFButtonOptions(
-                    height: 40,
-                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
-                    iconPadding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                    height: 40.0,
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    iconPadding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: Colors.white,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                          fontFamily: 'Space Grotesk',
+                          fontFamily: 'Inter Tight',
                           color: Colors.white,
-                          fontSize: 25,
+                          fontSize: 25.0,
                           letterSpacing: 0.0,
                         ),
-                    elevation: 0,
-                    borderRadius: BorderRadius.circular(8),
+                    elevation: 0.0,
+                    borderRadius: BorderRadius.circular(8.0),
                   ),
                 ),
               ],
             ),
           ),
           Divider(
-            thickness: 2,
+            thickness: 2.0,
             color: FlutterFlowTheme.of(context).alternate,
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 25),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 25.0),
             child: Container(
-              width: 430,
-              height: 100,
+              width: 430.0,
+              height: 100.0,
               decoration: BoxDecoration(
                 color: Color(0xFFE9E9E9),
               ),
@@ -106,35 +105,37 @@ class _PopupeKTPWidgetState extends State<PopupeKTPWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(21, 0, 0, 0),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(21.0, 0.0, 0.0, 0.0),
                     child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(8.0),
                       child: Image.network(
                         'https://picsum.photos/seed/564/600',
-                        width: 60,
-                        height: 60,
+                        width: 60.0,
+                        height: 60.0,
                         fit: BoxFit.cover,
                       ),
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-1, -1),
+                    alignment: AlignmentDirectional(-1.0, -1.0),
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(14, 0, 0, 0),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(14.0, 0.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 24.0, 0.0, 0.0),
                             child: Text(
                               'Pakai e-KTP terbaru kamu',
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -145,8 +146,8 @@ class _PopupeKTPWidgetState extends State<PopupeKTPWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Space Grotesk',
-                                  fontSize: 12,
+                                  fontFamily: 'Inter',
+                                  fontSize: 12.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w300,
                                 ),
@@ -160,10 +161,10 @@ class _PopupeKTPWidgetState extends State<PopupeKTPWidget> {
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 25),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 25.0),
             child: Container(
-              width: 430,
-              height: 100,
+              width: 430.0,
+              height: 100.0,
               decoration: BoxDecoration(
                 color: Color(0xFFE9E9E9),
               ),
@@ -171,35 +172,37 @@ class _PopupeKTPWidgetState extends State<PopupeKTPWidget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(21, 0, 0, 0),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(21.0, 0.0, 0.0, 0.0),
                     child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(8.0),
                       child: Image.network(
                         'https://picsum.photos/seed/564/600',
-                        width: 60,
-                        height: 60,
+                        width: 60.0,
+                        height: 60.0,
                         fit: BoxFit.cover,
                       ),
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-1, -1),
+                    alignment: AlignmentDirectional(-1.0, -1.0),
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(14, 0, 0, 0),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(14.0, 0.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 24.0, 0.0, 0.0),
                             child: Text(
                               'Pakai e-KTP terbaru kamu',
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -210,8 +213,8 @@ class _PopupeKTPWidgetState extends State<PopupeKTPWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Space Grotesk',
-                                  fontSize: 12,
+                                  fontFamily: 'Inter',
+                                  fontSize: 12.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w300,
                                 ),
@@ -225,25 +228,25 @@ class _PopupeKTPWidgetState extends State<PopupeKTPWidget> {
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 31),
+            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 31.0),
             child: FFButtonWidget(
               onPressed: () {
                 print('Button pressed ...');
               },
               text: 'Ambil foto e-KTP',
               options: FFButtonOptions(
-                width: 335,
-                height: 55,
-                padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
-                iconPadding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                width: 335.0,
+                height: 55.0,
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                 color: Color(0xFF415643),
                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                      fontFamily: 'Space Grotesk',
+                      fontFamily: 'Inter Tight',
                       color: Colors.white,
                       letterSpacing: 0.0,
                     ),
-                elevation: 0,
-                borderRadius: BorderRadius.circular(8),
+                elevation: 0.0,
+                borderRadius: BorderRadius.circular(8.0),
               ),
             ),
           ),

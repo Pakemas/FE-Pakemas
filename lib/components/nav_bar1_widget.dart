@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import 'nav_bar1_model.dart';
 export 'nav_bar1_model.dart';
 
@@ -28,8 +27,6 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => NavBar1Model());
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -43,7 +40,7 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 90,
+      height: 90.0,
       decoration: BoxDecoration(
         color: Color(0x00EEEEEE),
       ),
@@ -55,36 +52,36 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
             children: [
               Material(
                 color: Colors.transparent,
-                elevation: 0,
+                elevation: 0.0,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(0),
-                    bottomRight: Radius.circular(0),
-                    topLeft: Radius.circular(15),
-                    topRight: Radius.circular(15),
+                    bottomLeft: Radius.circular(0.0),
+                    bottomRight: Radius.circular(0.0),
+                    topLeft: Radius.circular(15.0),
+                    topRight: Radius.circular(15.0),
                   ),
                 ),
                 child: Container(
                   width: double.infinity,
-                  height: 70,
+                  height: 70.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).primaryBackground,
                     boxShadow: [
                       BoxShadow(
-                        blurRadius: 10,
+                        blurRadius: 10.0,
                         color: Color(0x1A57636C),
                         offset: Offset(
                           0.0,
-                          -10,
+                          -10.0,
                         ),
                         spreadRadius: 0.1,
                       )
                     ],
                     borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(0),
-                      bottomRight: Radius.circular(0),
-                      topLeft: Radius.circular(15),
-                      topRight: Radius.circular(15),
+                      bottomLeft: Radius.circular(0.0),
+                      bottomRight: Radius.circular(0.0),
+                      topLeft: Radius.circular(15.0),
+                      topRight: Radius.circular(15.0),
                     ),
                   ),
                 ),
@@ -102,17 +99,19 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(15, 30, 30, 10),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(15.0, 30.0, 30.0, 10.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 4.0),
                           child: Icon(
                             Icons.home_outlined,
                             color: Color(0xFF415643),
-                            size: 30,
+                            size: 30.0,
                           ),
                         ),
                         Text(
@@ -121,7 +120,7 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Montserrat',
                                     color: Color(0xFF415643),
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -130,17 +129,19 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(10, 30, 10, 10),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(10.0, 30.0, 10.0, 10.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 4.0),
                           child: Icon(
                             Icons.shopping_bag_outlined,
                             color: Color(0xFFA1A1A1),
-                            size: 30,
+                            size: 30.0,
                           ),
                         ),
                         Text(
@@ -149,7 +150,7 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Montserrat',
                                     color: Color(0xFFA1A1A1),
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -164,17 +165,18 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 22),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 22.0),
                     child: FlutterFlowIconButton(
                       borderColor: Colors.transparent,
-                      borderRadius: 20,
-                      borderWidth: 1,
-                      buttonSize: 60,
+                      borderRadius: 20.0,
+                      borderWidth: 1.0,
+                      buttonSize: 60.0,
                       fillColor: Color(0xFF538C6A),
                       icon: Icon(
                         Icons.camera_alt_outlined,
                         color: Colors.white,
-                        size: 30,
+                        size: 30.0,
                       ),
                       onPressed: () {
                         print('MiddleButton pressed ...');
@@ -189,17 +191,19 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(10, 30, 10, 10),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(10.0, 30.0, 10.0, 10.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 4.0),
                           child: Icon(
                             Icons.storefront_outlined,
                             color: Color(0xFFA1A1A1),
-                            size: 30,
+                            size: 30.0,
                           ),
                         ),
                         Text(
@@ -208,7 +212,7 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Montserrat',
                                     color: Color(0xFFA1A1A1),
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
                                   ),
@@ -217,17 +221,19 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(30, 30, 15, 10),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(30.0, 30.0, 15.0, 10.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 4),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 0.0, 0.0, 4.0),
                           child: Icon(
                             Icons.person_outline,
                             color: Color(0xFFA1A1A1),
-                            size: 30,
+                            size: 30.0,
                           ),
                         ),
                         Text(
@@ -236,7 +242,7 @@ class _NavBar1WidgetState extends State<NavBar1Widget> {
                               FlutterFlowTheme.of(context).bodySmall.override(
                                     fontFamily: 'Montserrat',
                                     color: Color(0xFFA1A1A1),
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.normal,
                                   ),

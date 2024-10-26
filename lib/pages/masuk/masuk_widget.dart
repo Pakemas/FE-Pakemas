@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import 'masuk_model.dart';
 export 'masuk_model.dart';
 
@@ -30,16 +29,10 @@ class _MasukWidgetState extends State<MasukWidget> {
 
     _model.textController2 ??= TextEditingController(text: 'asdasdasdas');
     _model.textFieldFocusNode2 ??= FocusNode();
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
   void dispose() {
-    _model.textController1?.dispose();
-    _model.textController2?.dispose();
-    _model.textFieldFocusNode1?.dispose();
-    _model.textFieldFocusNode2?.dispose();
     _model.dispose();
 
     super.dispose();
@@ -55,8 +48,8 @@ class _MasukWidgetState extends State<MasukWidget> {
         body: SafeArea(
           top: true,
           child: Container(
-            width: double.infinity,
-            height: double.infinity,
+            width: 435.0,
+            height: 796.0,
             decoration: BoxDecoration(
               color: Color(0xFF415643),
             ),
@@ -64,16 +57,17 @@ class _MasukWidgetState extends State<MasukWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Align(
-                  alignment: AlignmentDirectional(0, -1),
+                  alignment: AlignmentDirectional(0.0, -1.0),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 50, 0, 0),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 50.0, 0.0, 0.0),
                     child: Text(
                       'Selamat datang',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',
                             color: Colors.white,
-                            fontSize: 25,
+                            fontSize: 25.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.bold,
                           ),
@@ -81,37 +75,40 @@ class _MasukWidgetState extends State<MasukWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(10.0),
                     child: Image.network(
                       'https://picsum.photos/seed/676/600',
-                      width: 300,
-                      height: 172,
+                      width: 300.0,
+                      height: 172.0,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 34, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 34.0, 0.0, 0.0),
                   child: Container(
-                    height: 560,
+                    height: 560.0,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
+                        bottomLeft: Radius.circular(0.0),
+                        bottomRight: Radius.circular(0.0),
+                        topLeft: Radius.circular(20.0),
+                        topRight: Radius.circular(20.0),
                       ),
+                      shape: BoxShape.rectangle,
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(-1, -1),
+                          alignment: AlignmentDirectional(-1.0, -1.0),
                           child: Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(74, 40, 0, 5),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                74.0, 40.0, 0.0, 5.0),
                             child: Text(
                               'Email/No.Hp',
                               textAlign: TextAlign.start,
@@ -119,7 +116,7 @@ class _MasukWidgetState extends State<MasukWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -127,63 +124,81 @@ class _MasukWidgetState extends State<MasukWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 290,
+                            width: 290.0,
                             child: TextFormField(
                               controller: _model.textController1,
                               focusNode: _model.textFieldFocusNode1,
+                              autofocus: false,
+                              obscureText: false,
                               decoration: InputDecoration(
                                 isDense: true,
+                                labelStyle: FlutterFlowTheme.of(context)
+                                    .labelMedium
+                                    .override(
+                                      fontFamily: 'Inter',
+                                      letterSpacing: 0.0,
+                                      lineHeight: 20.0,
+                                    ),
                                 hintText: 'Email/No.Hp',
-                                filled: true,
-                                fillColor: Color(0xFFCBCBCB),
+                                hintStyle: FlutterFlowTheme.of(context)
+                                    .labelMedium
+                                    .override(
+                                      fontFamily: 'Inter',
+                                      letterSpacing: 0.0,
+                                    ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
+                                filled: true,
+                                fillColor: Color(0xFFCBCBCB),
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
                                     color: Colors.black,
-                                    fontSize: 12,
+                                    fontSize: 12.0,
+                                    letterSpacing: 0.0,
                                   ),
+                              cursorColor:
+                                  FlutterFlowTheme.of(context).primaryText,
                               validator: _model.textController1Validator
                                   .asValidator(context),
                             ),
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(-1, -1),
+                          alignment: AlignmentDirectional(-1.0, -1.0),
                           child: Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(74, 20, 0, 5),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                74.0, 20.0, 0.0, 5.0),
                             child: Text(
                               'Password',
                               textAlign: TextAlign.start,
@@ -191,7 +206,7 @@ class _MasukWidgetState extends State<MasukWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -199,81 +214,106 @@ class _MasukWidgetState extends State<MasukWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 290,
+                            width: 290.0,
                             child: TextFormField(
                               controller: _model.textController2,
                               focusNode: _model.textFieldFocusNode2,
+                              autofocus: false,
+                              obscureText: false,
                               decoration: InputDecoration(
                                 isDense: true,
+                                labelStyle: FlutterFlowTheme.of(context)
+                                    .labelMedium
+                                    .override(
+                                      fontFamily: 'Inter',
+                                      letterSpacing: 0.0,
+                                      lineHeight: 20.0,
+                                    ),
                                 hintText: 'Password',
-                                filled: true,
-                                fillColor: Color(0xFFCBCBCB),
+                                hintStyle: FlutterFlowTheme.of(context)
+                                    .labelMedium
+                                    .override(
+                                      fontFamily: 'Inter',
+                                      letterSpacing: 0.0,
+                                    ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
+                                filled: true,
+                                fillColor: Color(0xFFCBCBCB),
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Space Grotesk',
-                                    fontSize: 12,
+                                    fontFamily: 'Inter',
+                                    fontSize: 12.0,
+                                    letterSpacing: 0.0,
                                   ),
+                              cursorColor:
+                                  FlutterFlowTheme.of(context).primaryText,
                               validator: _model.textController2Validator
                                   .asValidator(context),
                             ),
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0, 0),
+                          alignment: AlignmentDirectional(0.0, 0.0),
                           child: Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(60, 15, 54, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                60.0, 15.0, 54.0, 0.0),
                             child: Row(
+                              mainAxisSize: MainAxisSize.max,
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
+                                  mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Theme(
                                       data: ThemeData(
                                         checkboxTheme: CheckboxThemeData(
+                                          visualDensity: VisualDensity.compact,
+                                          materialTapTargetSize:
+                                              MaterialTapTargetSize.shrinkWrap,
                                           shape: RoundedRectangleBorder(
                                             borderRadius:
-                                                BorderRadius.circular(4),
+                                                BorderRadius.circular(4.0),
                                           ),
                                         ),
+                                        unselectedWidgetColor:
+                                            Color(0xFFD9D9D9),
                                       ),
                                       child: Checkbox(
-                                        value: _model.checkboxValue ?? false,
-                                        onChanged: (newValue) {
-                                          setState(() =>
-                                              _model.checkboxValue = newValue);
+                                        value: _model.checkboxValue ??= false,
+                                        onChanged: (newValue) async {
+                                          safeSetState(() =>
+                                              _model.checkboxValue = newValue!);
                                         },
                                         side: BorderSide(
                                           width: 2,
@@ -300,7 +340,11 @@ class _MasukWidgetState extends State<MasukWidget> {
                                   },
                                   text: 'Lupa password?',
                                   options: FFButtonOptions(
-                                    height: 40,
+                                    height: 40.0,
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        16.0, 0.0, 16.0, 0.0),
+                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 0.0),
                                     color: Colors.white,
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
@@ -310,7 +354,8 @@ class _MasukWidgetState extends State<MasukWidget> {
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w800,
                                         ),
-                                    borderRadius: BorderRadius.circular(8),
+                                    elevation: 0.0,
+                                    borderRadius: BorderRadius.circular(8.0),
                                   ),
                                 ),
                               ],
@@ -318,26 +363,76 @@ class _MasukWidgetState extends State<MasukWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 20.0, 0.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () {
                               print('Button pressed ...');
                             },
-                            text: 'Masuk',
+                            text: 'Daftar',
                             options: FFButtonOptions(
-                              width: 300,
-                              height: 55,
+                              width: 300.0,
+                              height: 55.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  16.0, 0.0, 16.0, 0.0),
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
                               color: Color(0xFF415643),
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
                                     fontFamily: 'Montserrat',
                                     color: Colors.white,
-                                    fontSize: 16,
+                                    fontSize: 16.0,
+                                    letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
                                   ),
-                              borderRadius: BorderRadius.circular(8),
+                              elevation: 0.0,
+                              borderRadius: BorderRadius.circular(8.0),
                             ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 20.0, 0.0, 0.0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'Belum punya akun?',
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
+                                    .override(
+                                      fontFamily: 'Montserrat',
+                                      letterSpacing: 0.0,
+                                    ),
+                              ),
+                              FFButtonWidget(
+                                onPressed: () {
+                                  print('Button pressed ...');
+                                },
+                                text: 'Daftar',
+                                options: FFButtonOptions(
+                                  height: 40.0,
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      16.0, 0.0, 16.0, 0.0),
+                                  iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 0.0),
+                                  color: Colors.white,
+                                  textStyle: FlutterFlowTheme.of(context)
+                                      .titleSmall
+                                      .override(
+                                        fontFamily: 'Montserrat',
+                                        color: Color(0xFF415643),
+                                        letterSpacing: 0.0,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                  elevation: 0.0,
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],

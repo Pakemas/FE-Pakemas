@@ -1,4 +1,4 @@
-import '/components/popupwajah_widget.dart';
+import '/components/popupektp_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -7,28 +7,25 @@ import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'daftar2_model.dart';
+export 'daftar2_model.dart';
 
-import 'daftar3_model.dart';
-export 'daftar3_model.dart';
-
-class Daftar3Widget extends StatefulWidget {
-  const Daftar3Widget({super.key});
+class Daftar2Widget extends StatefulWidget {
+  const Daftar2Widget({super.key});
 
   @override
-  State<Daftar3Widget> createState() => _Daftar3WidgetState();
+  State<Daftar2Widget> createState() => _Daftar2WidgetState();
 }
 
-class _Daftar3WidgetState extends State<Daftar3Widget> {
-  late Daftar3Model _model;
+class _Daftar2WidgetState extends State<Daftar2Widget> {
+  late Daftar2Model _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Daftar3Model());
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
+    _model = createModel(context, () => Daftar2Model());
   }
 
   @override
@@ -55,12 +52,14 @@ class _Daftar3WidgetState extends State<Daftar3Widget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Align(
-                  alignment: AlignmentDirectional(-1, -1),
+                  alignment: AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(44, 69, 0, 0),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(44.0, 69.0, 0.0, 0.0),
                     child: FlutterFlowIconButton(
-                      borderRadius: 8,
-                      buttonSize: 40,
+                      borderColor: Colors.transparent,
+                      borderRadius: 8.0,
+                      buttonSize: 40.0,
                       fillColor: Color(0x00CE035F),
                       icon: Icon(
                         Icons.arrow_back_outlined,
@@ -73,16 +72,17 @@ class _Daftar3WidgetState extends State<Daftar3Widget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-1, -1),
+                  alignment: AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(64, 45, 0, 0),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(64.0, 45.0, 0.0, 0.0),
                     child: Text(
-                      'Verifikasi wajah',
+                      'Verifikasi e-KTP',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',
                             color: Colors.white,
-                            fontSize: 25,
+                            fontSize: 25.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.bold,
                           ),
@@ -90,16 +90,17 @@ class _Daftar3WidgetState extends State<Daftar3Widget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-1, -1),
+                  alignment: AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(64, 4, 0, 0),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(64.0, 4.0, 0.0, 0.0),
                     child: Text(
-                      'Pastikan kamu berada ditempat \nyang terang yaa',
+                      'Siapkan E-KTP Kamu dengan \nbaik yaa!!',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',
                             color: Colors.white,
-                            fontSize: 12,
+                            fontSize: 12.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w500,
                           ),
@@ -107,29 +108,29 @@ class _Daftar3WidgetState extends State<Daftar3Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: Container(
-                    width: 300,
-                    height: 433,
+                    width: 300.0,
+                    height: 433.0,
                     child: custom_widgets.TriggerCameraOverlay(
-                      width: 300,
-                      height: 433,
+                      width: 300.0,
+                      height: 433.0,
                       rotateCamera: false,
                       onCapture: (uploadedId) async {},
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 127, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 127.0, 0.0, 0.0),
                   child: Container(
-                    height: 700,
+                    height: 700.0,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(0),
-                        bottomRight: Radius.circular(0),
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
+                        bottomLeft: Radius.circular(0.0),
+                        bottomRight: Radius.circular(0.0),
+                        topLeft: Radius.circular(20.0),
+                        topRight: Radius.circular(20.0),
                       ),
                       shape: BoxShape.rectangle,
                     ),
@@ -138,7 +139,8 @@ class _Daftar3WidgetState extends State<Daftar3Widget> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 25.0, 0.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () async {
                               await showModalBottomSheet(
@@ -153,8 +155,8 @@ class _Daftar3WidgetState extends State<Daftar3Widget> {
                                     child: Padding(
                                       padding: MediaQuery.viewInsetsOf(context),
                                       child: Container(
-                                        height: 450,
-                                        child: PopupwajahWidget(),
+                                        height: 450.0,
+                                        child: PopupektpWidget(),
                                       ),
                                     ),
                                   );
@@ -163,24 +165,24 @@ class _Daftar3WidgetState extends State<Daftar3Widget> {
                             },
                             text: 'Selanjutnya',
                             options: FFButtonOptions(
-                              width: 300,
-                              height: 55,
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
-                              iconPadding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                              width: 300.0,
+                              height: 55.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  16.0, 0.0, 16.0, 0.0),
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
                               color: Color(0xFF415643),
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
                                     fontFamily: 'Montserrat',
                                     color: Colors.white,
-                                    fontSize: 16,
+                                    fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
                                   ),
-                              elevation: 0,
-                              borderRadius: BorderRadius.circular(8),
+                              elevation: 0.0,
+                              borderRadius: BorderRadius.circular(8.0),
                             ),
                           ),
                         ),
@@ -203,11 +205,11 @@ class _Daftar3WidgetState extends State<Daftar3Widget> {
                               },
                               text: 'Masuk',
                               options: FFButtonOptions(
-                                height: 40,
+                                height: 40.0,
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    16, 0, 16, 0),
-                                iconPadding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                                    16.0, 0.0, 16.0, 0.0),
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color: Colors.white,
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
@@ -216,8 +218,8 @@ class _Daftar3WidgetState extends State<Daftar3Widget> {
                                       color: Color(0xFF415643),
                                       letterSpacing: 0.0,
                                     ),
-                                elevation: 0,
-                                borderRadius: BorderRadius.circular(8),
+                                elevation: 0.0,
+                                borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),
                           ],

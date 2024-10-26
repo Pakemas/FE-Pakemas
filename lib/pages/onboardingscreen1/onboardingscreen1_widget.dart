@@ -6,7 +6,6 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart'
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import 'onboardingscreen1_model.dart';
 export 'onboardingscreen1_model.dart';
 
@@ -27,8 +26,6 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => Onboardingscreen1Model());
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -52,19 +49,20 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
             children: [
               Container(
                 width: double.infinity,
-                height: 600,
+                height: 600.0,
                 child: Stack(
                   children: [
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 40),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 40.0),
                       child: PageView(
                         controller: _model.pageViewController ??=
                             PageController(initialPage: 0),
                         scrollDirection: Axis.horizontal,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 65, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 65.0, 0.0, 0.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -74,7 +72,7 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Montserrat',
-                                        fontSize: 25,
+                                        fontSize: 25.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
                                       ),
@@ -89,7 +87,7 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Montserrat',
-                                            fontSize: 25,
+                                            fontSize: 25.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -101,7 +99,7 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                           .override(
                                             fontFamily: 'Montserrat',
                                             color: Color(0xFF4E7852),
-                                            fontSize: 25,
+                                            fontSize: 25.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -110,13 +108,13 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 25, 0, 0),
+                                      0.0, 25.0, 0.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(12),
+                                    borderRadius: BorderRadius.circular(12.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/32/600',
-                                      width: 300,
-                                      height: 400,
+                                      width: 300.0,
+                                      height: 400.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -125,8 +123,8 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                             ),
                           ),
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 65, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 65.0, 0.0, 0.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
@@ -136,7 +134,7 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Montserrat',
-                                        fontSize: 25,
+                                        fontSize: 25.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
                                       ),
@@ -151,7 +149,7 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Montserrat',
-                                            fontSize: 25,
+                                            fontSize: 25.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -163,7 +161,7 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                           .override(
                                             fontFamily: 'Montserrat',
                                             color: Color(0xFF4E7852),
-                                            fontSize: 25,
+                                            fontSize: 25.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -172,13 +170,13 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 25, 0, 0),
+                                      0.0, 25.0, 0.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(12),
+                                    borderRadius: BorderRadius.circular(12.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/32/600',
-                                      width: 300,
-                                      height: 400,
+                                      width: 300.0,
+                                      height: 400.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -190,8 +188,8 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 65, 0, 0),
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 65.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
@@ -201,7 +199,7 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                           .bodyMedium
                                           .override(
                                             fontFamily: 'Montserrat',
-                                            fontSize: 25,
+                                            fontSize: 25.0,
                                             letterSpacing: 0.0,
                                             fontWeight: FontWeight.bold,
                                           ),
@@ -217,7 +215,7 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                               .bodyMedium
                                               .override(
                                                 fontFamily: 'Montserrat',
-                                                fontSize: 25,
+                                                fontSize: 25.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
                                               ),
@@ -229,7 +227,7 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                               .override(
                                                 fontFamily: 'Montserrat',
                                                 color: Color(0xFF4E7852),
-                                                fontSize: 25,
+                                                fontSize: 25.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight: FontWeight.bold,
                                               ),
@@ -238,13 +236,14 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 25, 0, 0),
+                                          0.0, 25.0, 0.0, 0.0),
                                       child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(12),
+                                        borderRadius:
+                                            BorderRadius.circular(12.0),
                                         child: Image.network(
                                           'https://picsum.photos/seed/32/600',
-                                          width: 300,
-                                          height: 400,
+                                          width: 300.0,
+                                          height: 400.0,
                                           fit: BoxFit.cover,
                                         ),
                                       ),
@@ -258,9 +257,10 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                       ),
                     ),
                     Align(
-                      alignment: AlignmentDirectional(0, 1),
+                      alignment: AlignmentDirectional(0.0, 1.0),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                         child: smooth_page_indicator.SmoothPageIndicator(
                           controller: _model.pageViewController ??=
                               PageController(initialPage: 0),
@@ -275,10 +275,10 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                             safeSetState(() {});
                           },
                           effect: smooth_page_indicator.SlideEffect(
-                            spacing: 8,
-                            radius: 8,
-                            dotWidth: 37,
-                            dotHeight: 8,
+                            spacing: 8.0,
+                            radius: 8.0,
+                            dotWidth: 37.0,
+                            dotHeight: 8.0,
                             dotColor: Color(0xFFCFCFCF),
                             activeDotColor: Color(0xFF4E7852),
                             paintStyle: PaintingStyle.fill,
@@ -290,27 +290,29 @@ class _Onboardingscreen1WidgetState extends State<Onboardingscreen1Widget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () {
                     print('Button pressed ...');
                   },
                   text: 'Mulai',
                   options: FFButtonOptions(
-                    width: 300,
-                    height: 60,
-                    padding: EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
-                    iconPadding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                    width: 300.0,
+                    height: 60.0,
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    iconPadding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: Color(0xFF4E7852),
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Montserrat',
                           color: Colors.white,
-                          fontSize: 20,
+                          fontSize: 20.0,
                           letterSpacing: 0.0,
                           fontWeight: FontWeight.bold,
                         ),
-                    elevation: 0,
-                    borderRadius: BorderRadius.circular(8),
+                    elevation: 0.0,
+                    borderRadius: BorderRadius.circular(8.0),
                   ),
                 ),
               ),

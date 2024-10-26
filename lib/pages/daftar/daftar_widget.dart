@@ -4,7 +4,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import 'daftar_model.dart';
 export 'daftar_model.dart';
 
@@ -39,8 +38,6 @@ class _DaftarWidgetState extends State<DaftarWidget> {
 
     _model.textController5 ??= TextEditingController();
     _model.textFieldFocusNode5 ??= FocusNode();
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -60,8 +57,8 @@ class _DaftarWidgetState extends State<DaftarWidget> {
         body: SafeArea(
           top: true,
           child: Container(
-            width: 435,
-            height: 796,
+            width: 435.0,
+            height: 796.0,
             decoration: BoxDecoration(
               color: Color(0xFF415643),
             ),
@@ -69,16 +66,17 @@ class _DaftarWidgetState extends State<DaftarWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Align(
-                  alignment: AlignmentDirectional(0, -1),
+                  alignment: AlignmentDirectional(0.0, -1.0),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                     child: Text(
                       'Buat akun',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily: 'Montserrat',
                             color: Colors.white,
-                            fontSize: 25,
+                            fontSize: 25.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.bold,
                           ),
@@ -86,28 +84,28 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(10.0),
                     child: Image.network(
                       'https://picsum.photos/seed/676/600',
-                      width: 300,
-                      height: 172,
+                      width: 300.0,
+                      height: 172.0,
                       fit: BoxFit.cover,
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 34, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 34.0, 0.0, 0.0),
                   child: Container(
-                    height: 700,
+                    height: 700.0,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(0),
-                        bottomRight: Radius.circular(0),
-                        topLeft: Radius.circular(20),
-                        topRight: Radius.circular(20),
+                        bottomLeft: Radius.circular(0.0),
+                        bottomRight: Radius.circular(0.0),
+                        topLeft: Radius.circular(20.0),
+                        topRight: Radius.circular(20.0),
                       ),
                       shape: BoxShape.rectangle,
                     ),
@@ -116,10 +114,10 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(-1, -1),
+                          alignment: AlignmentDirectional(-1.0, -1.0),
                           child: Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(68, 20, 0, 5),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                68.0, 20.0, 0.0, 5.0),
                             child: Text(
                               'Nama panjang',
                               textAlign: TextAlign.start,
@@ -127,7 +125,7 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -135,9 +133,9 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 300,
+                            width: 300.0,
                             child: TextFormField(
                               controller: _model.textController1,
                               focusNode: _model.textFieldFocusNode1,
@@ -148,44 +146,44 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Space Grotesk',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
-                                      lineHeight: 20,
+                                      lineHeight: 20.0,
                                     ),
                                 hintText: 'Nama Panjang',
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Space Grotesk',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
                                     ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 filled: true,
                                 fillColor: Color(0xFFCBCBCB),
@@ -195,7 +193,7 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                   .override(
                                     fontFamily: 'Montserrat',
                                     color: Colors.black,
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                   ),
                               cursorColor:
@@ -206,10 +204,10 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(-1, -1),
+                          alignment: AlignmentDirectional(-1.0, -1.0),
                           child: Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(74, 15, 0, 5),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                74.0, 15.0, 0.0, 5.0),
                             child: Text(
                               'NIK',
                               textAlign: TextAlign.start,
@@ -217,7 +215,7 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -225,9 +223,9 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 300,
+                            width: 300.0,
                             child: TextFormField(
                               controller: _model.textController2,
                               focusNode: _model.textFieldFocusNode2,
@@ -238,44 +236,44 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Space Grotesk',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
-                                      lineHeight: 20,
+                                      lineHeight: 20.0,
                                     ),
                                 hintText: 'NIK',
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Space Grotesk',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
                                     ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 filled: true,
                                 fillColor: Color(0xFFCBCBCB),
@@ -285,7 +283,7 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                   .override(
                                     fontFamily: 'Montserrat',
                                     color: Colors.black,
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                   ),
                               keyboardType: TextInputType.number,
@@ -297,10 +295,10 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(-1, -1),
+                          alignment: AlignmentDirectional(-1.0, -1.0),
                           child: Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(74, 15, 0, 5),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                74.0, 15.0, 0.0, 5.0),
                             child: Text(
                               'Email',
                               textAlign: TextAlign.start,
@@ -308,7 +306,7 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -316,9 +314,9 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 300,
+                            width: 300.0,
                             child: TextFormField(
                               controller: _model.textController3,
                               focusNode: _model.textFieldFocusNode3,
@@ -329,44 +327,44 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Space Grotesk',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
-                                      lineHeight: 20,
+                                      lineHeight: 20.0,
                                     ),
                                 hintText: 'Email',
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Space Grotesk',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
                                     ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 filled: true,
                                 fillColor: Color(0xFFCBCBCB),
@@ -376,7 +374,7 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                   .override(
                                     fontFamily: 'Montserrat',
                                     color: Colors.black,
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                   ),
                               keyboardType: TextInputType.emailAddress,
@@ -388,10 +386,10 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(-1, -1),
+                          alignment: AlignmentDirectional(-1.0, -1.0),
                           child: Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(74, 15, 0, 5),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                74.0, 15.0, 0.0, 5.0),
                             child: Text(
                               'Kata sandi',
                               textAlign: TextAlign.start,
@@ -399,7 +397,7 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -407,9 +405,9 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 300,
+                            width: 300.0,
                             child: TextFormField(
                               controller: _model.textController4,
                               focusNode: _model.textFieldFocusNode4,
@@ -420,44 +418,44 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Space Grotesk',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
-                                      lineHeight: 20,
+                                      lineHeight: 20.0,
                                     ),
                                 hintText: 'Password',
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Space Grotesk',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
                                     ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 filled: true,
                                 fillColor: Color(0xFFCBCBCB),
@@ -466,7 +464,7 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                   ),
                               keyboardType: TextInputType.visiblePassword,
@@ -478,10 +476,10 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(-1, -1),
+                          alignment: AlignmentDirectional(-1.0, -1.0),
                           child: Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(74, 15, 0, 5),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                74.0, 15.0, 0.0, 5.0),
                             child: Text(
                               'Konfirmasi kata sandi',
                               textAlign: TextAlign.start,
@@ -489,7 +487,7 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -497,9 +495,9 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 300,
+                            width: 300.0,
                             child: TextFormField(
                               controller: _model.textController5,
                               focusNode: _model.textFieldFocusNode5,
@@ -510,44 +508,44 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                 labelStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Space Grotesk',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
-                                      lineHeight: 20,
+                                      lineHeight: 20.0,
                                     ),
                                 hintText: 'Password',
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
-                                      fontFamily: 'Space Grotesk',
+                                      fontFamily: 'Inter',
                                       letterSpacing: 0.0,
                                     ),
                                 enabledBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: Color(0x00000000),
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 errorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 focusedErrorBorder: OutlineInputBorder(
                                   borderSide: BorderSide(
                                     color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
+                                    width: 1.0,
                                   ),
-                                  borderRadius: BorderRadius.circular(8),
+                                  borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 filled: true,
                                 fillColor: Color(0xFFCBCBCB),
@@ -556,7 +554,7 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    fontSize: 12,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
                                   ),
                               keyboardType: TextInputType.visiblePassword,
@@ -568,31 +566,32 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 25, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 25.0, 0.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () {
                               print('Button pressed ...');
                             },
                             text: 'Selanjutnya',
                             options: FFButtonOptions(
-                              width: 300,
-                              height: 55,
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(16, 0, 16, 0),
-                              iconPadding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                              width: 300.0,
+                              height: 55.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  16.0, 0.0, 16.0, 0.0),
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
                               color: Color(0xFF415643),
                               textStyle: FlutterFlowTheme.of(context)
                                   .titleSmall
                                   .override(
                                     fontFamily: 'Montserrat',
                                     color: Colors.white,
-                                    fontSize: 16,
+                                    fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.bold,
                                   ),
-                              elevation: 0,
-                              borderRadius: BorderRadius.circular(8),
+                              elevation: 0.0,
+                              borderRadius: BorderRadius.circular(8.0),
                             ),
                           ),
                         ),
@@ -615,11 +614,11 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                               },
                               text: 'Masuk',
                               options: FFButtonOptions(
-                                height: 40,
+                                height: 40.0,
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    16, 0, 16, 0),
-                                iconPadding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                                    16.0, 0.0, 16.0, 0.0),
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
                                 color: Colors.white,
                                 textStyle: FlutterFlowTheme.of(context)
                                     .titleSmall
@@ -628,8 +627,8 @@ class _DaftarWidgetState extends State<DaftarWidget> {
                                       color: Color(0xFF415643),
                                       letterSpacing: 0.0,
                                     ),
-                                elevation: 0,
-                                borderRadius: BorderRadius.circular(8),
+                                elevation: 0.0,
+                                borderRadius: BorderRadius.circular(8.0),
                               ),
                             ),
                           ],

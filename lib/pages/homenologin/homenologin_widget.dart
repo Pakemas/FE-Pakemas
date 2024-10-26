@@ -7,7 +7,6 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart'
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import 'homenologin_model.dart';
 export 'homenologin_model.dart';
 
@@ -30,8 +29,6 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
 
     _model.textController ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
-
-    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -56,130 +53,128 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
               Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0, 40, 0, 0),
-                    child: Container(
-                      width: 430,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        color: Color(0xFF4E7852),
-                        borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(25),
-                          bottomRight: Radius.circular(25),
-                          topLeft: Radius.circular(0),
-                          topRight: Radius.circular(0),
-                        ),
+                  Container(
+                    width: 430.0,
+                    height: 100.0,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF4E7852),
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(25.0),
+                        bottomRight: Radius.circular(25.0),
+                        topLeft: Radius.circular(0.0),
+                        topRight: Radius.circular(0.0),
                       ),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        children: [
-                          Align(
-                            alignment: AlignmentDirectional(-1, -1),
-                            child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
-                                  50, 25, 50, 25),
-                              child: Text(
-                                'Totable',
-                                textAlign: TextAlign.start,
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyMedium
-                                    .override(
-                                      fontFamily: 'Montserrat',
-                                      color: Colors.white,
-                                      fontSize: 18,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.bold,
-                                      fontStyle: FontStyle.italic,
-                                    ),
-                              ),
-                            ),
-                          ),
-                          Container(
-                            width: 380,
-                            child: TextFormField(
-                              controller: _model.textController,
-                              focusNode: _model.textFieldFocusNode,
-                              autofocus: false,
-                              obscureText: false,
-                              decoration: InputDecoration(
-                                isDense: true,
-                                labelStyle: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Montserrat',
-                                      fontSize: 12,
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                hintText: 'Cari merchant terdekat disini',
-                                hintStyle: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Space Grotesk',
-                                      letterSpacing: 0.0,
-                                      fontWeight: FontWeight.normal,
-                                    ),
-                                enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: Color(0x33000000),
-                                    width: 1,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: Color(0x00000000),
-                                    width: 1,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                errorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                focusedErrorBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context).error,
-                                    width: 1,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                filled: true,
-                                fillColor: FlutterFlowTheme.of(context)
-                                    .secondaryBackground,
-                                suffixIcon: Icon(
-                                  Icons.search_sharp,
-                                  color: Color(0x7F4B4B4B),
-                                  size: 20,
-                                ),
-                              ),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Align(
+                          alignment: AlignmentDirectional(-1.0, -1.0),
+                          child: Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                50.0, 25.0, 50.0, 25.0),
+                            child: Text(
+                              'Totable',
+                              textAlign: TextAlign.start,
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
                                     fontFamily: 'Montserrat',
-                                    color: Color(0xFF353535),
-                                    fontSize: 14,
+                                    color: Colors.white,
+                                    fontSize: 18.0,
                                     letterSpacing: 0.0,
+                                    fontWeight: FontWeight.bold,
+                                    fontStyle: FontStyle.italic,
                                   ),
-                              cursorColor:
-                                  FlutterFlowTheme.of(context).primaryText,
-                              validator: _model.textControllerValidator
-                                  .asValidator(context),
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                        Container(
+                          width: 380.0,
+                          child: TextFormField(
+                            controller: _model.textController,
+                            focusNode: _model.textFieldFocusNode,
+                            autofocus: false,
+                            obscureText: false,
+                            decoration: InputDecoration(
+                              isDense: true,
+                              labelStyle: FlutterFlowTheme.of(context)
+                                  .labelMedium
+                                  .override(
+                                    fontFamily: 'Montserrat',
+                                    fontSize: 12.0,
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                              hintText: 'Cari merchant terdekat disini',
+                              hintStyle: FlutterFlowTheme.of(context)
+                                  .labelMedium
+                                  .override(
+                                    fontFamily: 'Inter',
+                                    letterSpacing: 0.0,
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                              enabledBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Color(0x33000000),
+                                  width: 1.0,
+                                ),
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Color(0x00000000),
+                                  width: 1.0,
+                                ),
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                              errorBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: FlutterFlowTheme.of(context).error,
+                                  width: 1.0,
+                                ),
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                              focusedErrorBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: FlutterFlowTheme.of(context).error,
+                                  width: 1.0,
+                                ),
+                                borderRadius: BorderRadius.circular(8.0),
+                              ),
+                              filled: true,
+                              fillColor: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              suffixIcon: Icon(
+                                Icons.search_sharp,
+                                color: Color(0x7F4B4B4B),
+                                size: 20.0,
+                              ),
+                            ),
+                            style: FlutterFlowTheme.of(context)
+                                .bodyMedium
+                                .override(
+                                  fontFamily: 'Montserrat',
+                                  color: Color(0xFF353535),
+                                  fontSize: 14.0,
+                                  letterSpacing: 0.0,
+                                ),
+                            cursorColor:
+                                FlutterFlowTheme.of(context).primaryText,
+                            validator: _model.textControllerValidator
+                                .asValidator(context),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   Expanded(
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 46, 0, 0),
+                      padding:
+                          EdgeInsetsDirectional.fromSTEB(0.0, 46.0, 0.0, 0.0),
                       child: Container(
                         width: double.infinity,
-                        height: 200,
+                        height: 200.0,
                         child: Stack(
                           children: [
                             PageView(
@@ -191,11 +186,11 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     ClipRRect(
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(8.0),
                                       child: Image.network(
                                         'https://picsum.photos/seed/613/600',
-                                        width: 380,
-                                        height: 200,
+                                        width: 380.0,
+                                        height: 200.0,
                                         fit: BoxFit.cover,
                                       ),
                                     ),
@@ -205,11 +200,11 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     ClipRRect(
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(8.0),
                                       child: Image.network(
                                         'https://picsum.photos/seed/613/600',
-                                        width: 380,
-                                        height: 200,
+                                        width: 380.0,
+                                        height: 200.0,
                                         fit: BoxFit.cover,
                                       ),
                                     ),
@@ -219,11 +214,11 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     ClipRRect(
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(8.0),
                                       child: Image.network(
                                         'https://picsum.photos/seed/613/600',
-                                        width: 380,
-                                        height: 200,
+                                        width: 380.0,
+                                        height: 200.0,
                                         fit: BoxFit.cover,
                                       ),
                                     ),
@@ -233,11 +228,11 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     ClipRRect(
-                                      borderRadius: BorderRadius.circular(8),
+                                      borderRadius: BorderRadius.circular(8.0),
                                       child: Image.network(
                                         'https://picsum.photos/seed/613/600',
-                                        width: 380,
-                                        height: 200,
+                                        width: 380.0,
+                                        height: 200.0,
                                         fit: BoxFit.cover,
                                       ),
                                     ),
@@ -246,10 +241,10 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                               ],
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0, 1),
+                              alignment: AlignmentDirectional(0.0, 1.0),
                               child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 16),
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 16.0),
                                 child:
                                     smooth_page_indicator.SmoothPageIndicator(
                                   controller: _model.pageViewController ??=
@@ -267,11 +262,11 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                                   },
                                   effect:
                                       smooth_page_indicator.ExpandingDotsEffect(
-                                    expansionFactor: 2,
-                                    spacing: 8,
-                                    radius: 8,
-                                    dotWidth: 46,
-                                    dotHeight: 5,
+                                    expansionFactor: 2.0,
+                                    spacing: 8.0,
+                                    radius: 8.0,
+                                    dotWidth: 46.0,
+                                    dotHeight: 5.0,
                                     dotColor: Colors.white,
                                     activeDotColor: Color(0xFF919191),
                                     paintStyle: PaintingStyle.fill,
@@ -285,12 +280,13 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-1, -1),
+                    alignment: AlignmentDirectional(-1.0, -1.0),
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(30, 30, 30, 30),
+                      padding: EdgeInsetsDirectional.fromSTEB(
+                          30.0, 30.0, 30.0, 30.0),
                       child: Container(
-                        width: 430,
-                        height: 167,
+                        width: 430.0,
+                        height: 167.0,
                         decoration: BoxDecoration(),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -298,10 +294,10 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(-1, -1),
+                              alignment: AlignmentDirectional(-1.0, -1.0),
                               child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 10.0),
                                 child: Text(
                                   'Katalog produk',
                                   textAlign: TextAlign.start,
@@ -320,130 +316,130 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -456,12 +452,13 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(-1, -1),
+                    alignment: AlignmentDirectional(-1.0, -1.0),
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(30, 30, 30, 30),
+                      padding: EdgeInsetsDirectional.fromSTEB(
+                          30.0, 30.0, 30.0, 30.0),
                       child: Container(
-                        width: 430,
-                        height: 167,
+                        width: 430.0,
+                        height: 167.0,
                         decoration: BoxDecoration(),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -469,10 +466,10 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(-1, -1),
+                              alignment: AlignmentDirectional(-1.0, -1.0),
                               child: Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 10.0),
                                 child: Text(
                                   'Mitra terdekat',
                                   textAlign: TextAlign.start,
@@ -491,130 +488,130 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                               children: [
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 0, 25, 0),
+                                      0.0, 0.0, 25.0, 0.0),
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.0),
                                     child: Image.network(
                                       'https://picsum.photos/seed/703/600',
-                                      width: 140,
-                                      height: 140,
+                                      width: 140.0,
+                                      height: 140.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -626,7 +623,13 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                       ),
                     ),
                   ),
-                  Stack(
+                ],
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.0, 1.0),
+                child: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 45.0, 0.0, 0.0),
+                  child: Stack(
                     children: [
                       wrapWithModel(
                         model: _model.navBar1Model,
@@ -635,7 +638,7 @@ class _HomenologinWidgetState extends State<HomenologinWidget> {
                       ),
                     ],
                   ),
-                ],
+                ),
               ),
             ],
           ),
